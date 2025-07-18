@@ -12,7 +12,7 @@ from typing import List
 class Solution1:
     def isValid(self, s: str) -> bool:
         stack = [] # Initialize an empty stack, we'll store opening brackets as we encounter them
-        # Initialize a hashmap which will contain the closing parenthesis and their open equivalvents
+        # Initialize a hashmap which will contain the closing parenthesis and their open equivalents
         closeToOpen = {
             ")" : "(",
             "]" : "[",

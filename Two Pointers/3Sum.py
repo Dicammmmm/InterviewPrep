@@ -3,7 +3,7 @@ from typing import List
 # Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] where nums[i] + nums[j] + nums[k] == 0, and the indices i, j and k are all distinct.
 # The output should not contain any duplicate triplets. You may return the output and the triplets in any order.
 
-# Time complexity: O(n^2)\
+# Time complexity: O(n^2)
 # Space complexity: O(1) + O(m) - m = number of triples, n = length of the given array
 class Solution1:
     def threeSum(self, nums: List[int]) -> List[List[int]]:

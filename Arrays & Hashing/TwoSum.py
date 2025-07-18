@@ -21,7 +21,7 @@ class Solution1:
 # Time complexity: O(n log n)
 # Space complexity: O(n)
 class Solution2:
-    def twoSum(self, nums: List[list], target: int) -> List[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         A = []                          # Initiate an empty list
         for i, num in enumerate(nums):  # For every index, number in enumerated list of nums
             A.append([num, i])          # Create a a Value-Index pair
