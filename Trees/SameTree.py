@@ -11,4 +11,10 @@ class TreeNode:
 
 class Solution1:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        return True
+        if not p and not q: # If both p and q are emtpy return True
+            return True
+        
+        if not p or not q or p.val != q.val:    # If p is empty or q is empty or p value is not equal to the q value return False
+            return False
+        
+        return (self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right))  # Recusively check for the values
