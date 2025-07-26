@@ -61,7 +61,7 @@ A curated collection of educational videos and books to help you excel in techni
 - Database internals and consistency models
 - Scalability and reliability patterns
 
-**[Building Secure & Reliable Systems](https://www.dbooks.org/building-secure-and-reliable-systems-1492083127/read/)** *(Google)*
+**[Building Secure & Reliable Systems](https://www.dbooks.org/building-secure-and-reliable-systems-1492083127/read/)** *(O'Reilly)*
 - Google's approach to system reliability
 - Security best practices
 - Site Reliability Engineering (SRE) principles
