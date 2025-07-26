@@ -1,4 +1,4 @@
-# Algorithm Solutions Repository
+# Interview Prep
 
 A collection of algorithm and data structure solutions organized by programming patterns. This repository serves as a reference for coding interview preparation and algorithm study as well as preparation for behavioral questions. Includes CV templates and CV advice.
 
