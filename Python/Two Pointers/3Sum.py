@@ -10,16 +10,16 @@ class Solution1:
         result = [] # Initiate an empty list to store the results
         nums.sort() # Sort the given List so that we can do the sums easier
 
-        for i, n in enumerate(nums):    # For every index and number (n) in the enumerated list nums - [(0, n), (1, n), (2, n)]
+        for i, n in enumerate(nums):        # For every index and number (n) in the enumerated list nums - [(0, n), (1, n), (2, n)]
             if i > 0 and n == nums[i - 1]:  # We don't want to use the same value twice
-                continue    # Move to the next iteration of the loop
+                continue                    # Move to the next iteration of the loop
 
-            left, right = i + 1, len(nums) - 1  # Initiate the two pointers, left will be 1 index higher than the first number in our triplet
-            while left < right: # Left CAN'T be higher than right
+            left, right = i + 1, len(nums) - 1          # Initiate the two pointers, left will be 1 index higher than the first number in our triplet
+            while left < right:                         # Left CAN'T be higher than right
                 threeSum = n + nums[left] + nums[right] # The sum of these 3 values should be 0
-                if threeSum > 0:    # If the sum is higher than 0 we will move the right pointer to the left
+                if threeSum > 0:                        # If the sum is higher than 0 we will move the right pointer to the left
                     right -= 1
-                elif threeSum < 0:  # If the sum is lower than 0 we will move the left pointer to the right
+                elif threeSum < 0:                      # If the sum is lower than 0 we will move the left pointer to the right
                     left += 1
                 else:
                     result.append([n, nums[left], nums[right]]) # If the result is 0 we will add the resulting triplets to the results list and move the left pointer to the next value

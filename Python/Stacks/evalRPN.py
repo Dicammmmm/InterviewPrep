@@ -15,16 +15,16 @@ class Solution1:
                 stack.append(stack.pop() + stack.pop()) # Append to the stack the sum of the two previous values and pop them, leaving us only with the result 
             elif t == "-":
                 x, y = stack.pop(), stack.pop() # We want to get the popped values into a placeholder variables
-                stack.append(y - x) # Append to the stack the value of y - x.
+                stack.append(y - x)             # Append to the stack the value of y - x.
                 # We are doing the subtraction in reverse order as x is the top element (second operand), y is below it (first operand) in the stack and stacks follow last in first out philosophy
             elif t == "*":
                 stack.append(stack.pop() * stack.pop()) # Append to the stack the product of the two previous values and pop them, leaving us only with the result in the stack
             elif t == "/":
-                x, y = stack.pop(), stack.pop() # We want to get the popped values into a placeholder variables
-                stack.append(int(y / x)) # Append to the stack the result of the division and turn it into an integer as this will truncate towards zero
+                x, y = stack.pop(), stack.pop()         # We want to get the popped values into a placeholder variables
+                stack.append(int(y / x))                # Append to the stack the result of the division and turn it into an integer as this will truncate towards zero
                 # We are doing the division in reverse order as x is the top element (second operand), y is below it (first operand) in the stack and stacks follow last in first out philosophy
             else:
-                stack.append(int(t))    # If it is not an operator, convert the token to an integer and add it to the stack
+                stack.append(int(t))                    # If it is not an operator, convert the token to an integer and add it to the stack
             
         return stack[0] # Return the evaluation from the stack
 

@@ -34,8 +34,8 @@ class Solution2:
     def isPalindrome(self, s: str) -> bool:
         newS = ''   # Initialize a new empty string
 
-        for c in s: # For every character in the string
-            if c.isalnum(): # Check if it's alphanumeric
+        for c in s:                 # For every character in the string
+            if c.isalnum():         # Check if it's alphanumeric
                 newS += c.lower()   # Add the character to the string in a lower case
             
-        return newS == newS[::-1]  # Check if it's a palindrome
+        return newS == newS[::-1]   # Check if it's a palindrome

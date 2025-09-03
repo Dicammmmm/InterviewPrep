@@ -8,7 +8,7 @@ from collections import defaultdict
 # Space complexity: O(m * n) - m = number of string, n = length of the longest string
 class Solution1:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        map = defaultdict(list) # defaultdict(list) creates an empty list for each new key
+        map = defaultdict(list)             # defaultdict(list) creates an empty list for each new key
 
         for s in strs:                      # For each string in the list
             sortedS = ''.join(sorted(s))    # Sort the letters in the string
