@@ -20,15 +20,15 @@ class Solution:
             
             if openN < n:
                 # Can still add opening parenthesis
-                stack.append("(")           # Add "(" to current combination
-                backtrack(openN + 1, closedN)  # Recursively explore
-                stack.pop()                 # BACKTRACK - remove "("
+                stack.append("(")               # Add "(" to current combination
+                backtrack(openN + 1, closedN)   # Recursively explore
+                stack.pop()                     # BACKTRACK - remove "("
             
             if closedN < openN:
                 # Can add closing parenthesis (must have matching open)
-                stack.append(")")           # Add ")" to current combination  
-                backtrack(openN, closedN + 1)  # Recursively explore
-                stack.pop()                 # BACKTRACK - remove ")"
+                stack.append(")")               # Add ")" to current combination  
+                backtrack(openN, closedN + 1)   # Recursively explore
+                stack.pop()                     # BACKTRACK - remove ")"
             
         backtrack(0, 0)    # Start with 0 opens, 0 closes
         return result
